@@ -1,0 +1,28 @@
+
+										<table class="table table-hover">
+											  <thead>
+												  <tr>
+													  <th scope="col">Usuário</th>
+													  <th scope="col">Arquivo</th>
+													  <th scope="col">Data de Envio</th>
+													  <th scope="col">Imagem</th>
+													  <th scope="col">Código</th>
+                                                      <th scope="col">Editar</th>
+                                                      <th scope="col">Excluir</th>
+												  </tr>
+											  </thead>
+											  <tbody>
+                                                  {% for campo in object_list %}
+                                                      <tr>
+                                                          <td scope="row">{{ campo.empresa }}</td>
+                                                          <td scope="row">{{ campo.arquivo }}</td>
+                                                          <td scope="row">{{ campo.data_envio }}</td>
+                                                          <td scope="row">{{ campo.imagem }}</td>
+														  <td scope="row">{{ campo.codigo }}</td>
+                                                          <td><a href="#" class="btn btn-warning btn-sm" title="Editar"><i class="fa fa-trash" aria-hidden="true" ></i></a></td>
+                                                          <td><a href="{% url 'url-delete-arquivos' campo.pk %}" class="btn btn-danger btn-sm" title="Excluir"><i class="icon-trash" aria-hidden="true" ></i></a></td>
+                                                      </tr>
+                                                  {% endfor %}
+											  </tbody>
+										</table>
+										<!--end: Datatable-->

@@ -1,0 +1,26 @@
+{% load fullcalendar_tags %}
+{% load bootstrap4 %}
+{% load static %}
+{% load fullcalendar_tags %}
+
+<html lang="pt-br">
+
+	<head>
+
+		<title>Teste</title>
+
+		{% fullcalendar_css %}
+		{% fullcalendar_print_css %}
+		{% fullcalendar_jquery %}
+		{% fullcalendar_jquery_ui %}
+		{% fullcalendar_javascript %}
+
+		{% calendar_init event_url %}
+
+</head>
+	<body id="kt_body" class="header-fixed header-mobile-fixed subheader-enabled page-loading">
+		{% calendar %}
+		<!--end::Page Scripts-->
+	</body>
+	<!--end::Body-->
+</html>

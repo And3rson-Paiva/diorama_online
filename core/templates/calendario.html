@@ -1,0 +1,173 @@
+{% load fullcalendar_tags %}
+{% load bootstrap4 %}
+{% load static %}
+{% load fullcalendar_tags %}
+
+<html lang="pt-br">
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/dataTables.bootstrap.min.css' %}">
+        {% include 'model-head.html' %}
+	</head>
+	<body id="kt_body" class="header-fixed header-mobile-fixed subheader-enabled page-loading">
+		{% include 'model-nav.html' %}
+		<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+			<div class="subheader py-2 py-lg-6 subheader-transparent" id="kt_subheader">
+							<div class="container d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
+								<!--begin::Info-->
+								<div class="d-flex align-items-center flex-wrap mr-1">
+									<!--begin::Page Heading-->
+									<div class="d-flex align-items-baseline flex-wrap mr-5">
+										<!--begin::Page Title-->
+										<h5 class="text-dark font-weight-bold my-1 mr-5">Calendário</h5>
+										<!--end::Page Title-->
+										<!--begin::Breadcrumb-->
+										<ul class="breadcrumb breadcrumb-transparent breadcrumb-dot font-weight-bold p-0 my-2 font-size-sm">
+
+                                            <li class="breadcrumb-item">
+												<a href="{% url 'url-index' %}" class="text-muted">Home</a>
+											</li>											<li class="breadcrumb-item">
+												<a href="" class="text-muted">Calendário de obrigações</a>
+											</li>
+										</ul>
+
+										<!--end::Breadcrumb-->
+									</div>
+									<!--end::Page Heading-->
+								</div>
+								<!--end::Info-->
+							</div>
+						</div>
+			<div class="d-flex flex-column-fluid">
+				<div class="container">
+					<div class="row">
+						<!--Inicio da coluna de legenda-->
+						<div class="col-lg-3">
+										<!--begin::Card-->
+							<div class="card card-custom card-stretch">
+								<div class="card-header">
+									<div class="card-title">
+										<h3 class="card-label">Legendas</h3>
+									</div>
+								</div>
+								<div class="card-body">
+									<div id="kt_calendar_external_events" class="fc-unthemed">
+										<div class="btn btn-block text-left font-weight-bold btn-light-primary fc-draggable-handle mb-5 cursor-move" data-color="fc-event-primary">Impostos</div>
+										<div class="btn btn-block text-left font-weight-bold btn-light-success fc-draggable-handle mb-5 cursor-move" data-color="fc-event-primary">Feriados</div>
+										<div class="btn btn-block text-left font-weight-bold btn-light-danger fc-draggable-handle mb-5 cursor-move" data-color="fc-event-success">IPRF</div>
+										<div class="btn btn-block text-left font-weight-bold btn-light-info fc-draggable-handle mb-5 cursor-move" data-color="fc-event-warning">Product Launch</div>
+										<div class="btn btn-block text-left font-weight-bold btn-light-warning fc-draggable-handle cursor-move" data-color="fc-event-danger">Reporting</div>
+										<div class="separator separator-dashed my-10"></div>
+										<div class="btn btn-block text-left font-weight-bold btn-light-success fc-draggable-handle cursor-move" data-color="fc-event-success">Project Update</div>
+										<div class="btn btn-block text-left font-weight-bold btn-light-primary fc-draggable-handle cursor-move" data-color="fc-event-info">Staff Meeting</div>
+										<div class="btn btn-block text-left font-weight-bold btn-light-danger fc-draggable-handle cursor-move" data-color="fc-event-dark">Lunch</div>
+										<div class="separator separator-dashed my-10"></div>
+										<div>
+											<label class="checkbox checkbox-primary">
+											<input type="checkbox" id="kt_calendar_external_events_remove" />Remove after drop
+											<span></span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--end::Card-->
+						</div>
+						<!--Fim da coluna de legenda-->
+						<div class="col-lg-9">
+							<div class="card card-custom card-stretch">
+								<div class="card-header">
+									<div class="card-title">
+										<h3 class="card-label">Calendário de Obrigações</h3>
+									</div>
+									<div class="card-toolbar">
+										<a href="#" class="btn btn-light-primary font-weight-bold">
+										<i class="ki ki-plus"></i>Adicionar eventos</a>
+									</div>
+								</div>
+								<div class="card-body">
+
+								<div id="calendar" style="padding: 20px;" ></div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer bg-white py-4 d-flex flex-lg-column" id="kt_footer">
+						<!--begin::Container-->
+			<div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+				<div class="text-dark order-2 order-md-1">
+					<span class="text-muted font-weight-bold mr-2">2020©</span>
+					<a href="https://dioramanegocios.com.br" target="_blank" class="text-dark-75 text-hover-primary">Diorama Contabilidade</a>
+				</div>
+				<!--end::Copyright-->
+				<!--begin::Nav-->
+				<div class="nav nav-dark order-1 order-md-2">
+					<a href="https://dioramanegocios.com.br" target="_blank" class="nav-link pr-3 pl-0">Sobre</a>
+					<a href="https://dioramanegocios.com.br" target="_blank" class="nav-link px-3">Team</a>
+					<a href="https://dioramanegocios.com.br/contato-suporte/" target="_blank" class="nav-link pl-3 pr-0">Contato</a>
+				</div>
+				<!--end::Nav-->
+			</div>
+			<!--end::Container-->
+		</div>
+		{% include 'model-sidebar.html' %}
+		<div id="kt_scrolltop" class="scrolltop">
+			<span class="svg-icon">
+				<!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Up-2.svg-->
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<polygon points="0 0 24 0 24 24 0 24" />
+						<rect fill="#000000" opacity="0.3" x="11" y="10" width="2" height="10" rx="1" />
+						<path d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z" fill="#000000" fill-rule="nonzero" />
+					</g>
+				</svg>
+				<!--end::Svg Icon-->
+			</span>
+		</div>
+
+
+		<!--begin::Global Theme Bundle(used by all pages)-->
+
+		<script src="{% static 'js/prismjs.bundle.js' %}"></script>
+		<script src="{% static 'js/scripts.bundle.js' %}"></script>
+		<!--end::Global Theme Bundle-->
+
+		<script src="{% static 'js/fullcalendar.bundle.js' %}"></script>
+		<script src="{% static 'js/external-events.js' %}"></script>
+		<script src="{% static 'js/main.js' %}"></script>
+        <script src="{% static 'js/locales-all.js' %}"></script>
+        <script src="{% static 'js/dataTables.bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/jquery.dataTables.min.js' %}"></script>
+
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function(){
+				var calendarUI = document.getElementById('calendar');
+				var calendar = new FullCalendar.Calendar(calendarUI,{
+				themeSystem: 'bootstrap',
+				    events: [
+				        {% for evento in object_list %}
+				            {
+				                title: "{{ evento.empresa }}",
+				                start: '{{ evento.inicio | date:"Y-m-d" }}',
+				                end: '{{ evento.vencimento | date:"Y-m-d" }}',
+				                color: '#cc0000',
+				            },
+				        {% endfor %}
+				    ]
+				});
+				calendar.render();
+				calendar.setOption('locale', 'pt');
+			});
+
+
+		</script>
+
+		<!--end::Page Scripts-->
+	</body>
+	<!--end::Body-->
+</html>

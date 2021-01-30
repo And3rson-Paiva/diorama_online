@@ -1,0 +1,451 @@
+{% load bootstrap4 %}
+{% load static %}
+
+
+<html lang="pt-br">
+
+	<!--begin::Head-->
+	<head><base href="">
+		{% include 'model-head.html' %}
+	<!--end::Head-->
+	</head>
+	<!--begin::Body-->
+	<body id="kt_body" class="header-fixed header-mobile-fixed subheader-enabled page-loading">
+				{% include 'model-nav.html' %}
+			<!--begin::Content-->
+					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+						<!--begin::Entry-->
+
+						<div class="d-flex flex-column-fluid">
+							<!--begin::Container-->
+							<div class="container">
+
+								<div class="d-flex align-items-baseline flex-wrap mr-5">
+									<!--begin::Page Title-->
+									<h5 class="text-dark font-weight-bold my-5 mr-5">Parceiros</h5>
+									<!--end::Page Title-->
+									<!--begin::Breadcrumb-->
+									<ul class="breadcrumb breadcrumb-transparent breadcrumb-dot font-weight-bold p-0 my-2 font-size-sm">
+										<li class="breadcrumb-item">
+											<a href="{% url 'url-index' %}" class="text-muted">Home</a>
+										</li>
+										<li class="breadcrumb-item">
+											<a href="" class="text-muted">Parceiros</a>
+										</li>
+									</ul>
+									<!--end::Breadcrumb-->
+
+								</div>
+
+								<!--begin::Page Layout-->
+								<div class="d-flex flex-row">
+									<!--begin::Aside-->
+									<div class="flex-column offcanvas-mobile w-300px w-xl-325px" id="kt_profile_aside">
+										<!--begin::Forms Widget 15-->
+										<div class="card card-custom gutter-b">
+											<!--begin::Body-->
+											<div class="card-body">
+												<!--begin::Form-->
+												<form>
+													<!--begin::Categories-->
+													<div class="form-group mb-11">
+														<label class="font-size-h3 font-weight-bolder text-dark mb-7">Categorias</label>
+														<!--begin::Checkbox list-->
+														<div class="checkbox-list">
+															<label class="checkbox checkbox-lg mb-7">
+																<input type="checkbox" name="Tecnologia" />
+																<span></span>
+																<div class="font-size-lg text-dark-75 font-weight-bold">Tecnologia</div>
+																<div class="ml-auto text-muted font-weight-bold">28</div>
+															</label>
+															<label class="checkbox checkbox-lg mb-7">
+																<input type="checkbox" name="Comércio" />
+																<span></span>
+																<div class="font-size-lg text-dark-75 font-weight-bold">Comércio</div>
+																<div class="ml-auto text-muted font-weight-bold">37</div>
+															</label>
+															<label class="checkbox checkbox-lg mb-7">
+																<input type="checkbox" name="appliances" />
+																<span></span>
+																<div class="font-size-lg text-dark-75 font-weight-bold">Serviços</div>
+																<div class="ml-auto text-muted font-weight-bold">14</div>
+															</label>
+															<label class="checkbox checkbox-lg mb-7">
+																<input type="checkbox" name="appliances" />
+																<span></span>
+																<div class="font-size-lg text-dark-75 font-weight-bold">Softwares</div>
+																<div class="ml-auto text-muted font-weight-bold">12</div>
+															</label>
+															<label class="checkbox checkbox-lg">
+																<input type="checkbox" name="appliances" />
+																<span></span>
+																<div class="font-size-lg text-dark-75 font-weight-bold">Descontos</div>
+																<div class="ml-auto text-muted font-weight-bold">15</div>
+															</label>
+														</div>
+														<!--end::Checkbox list-->
+													</div>
+													<!--end::Categories-->
+												</form>
+												<!--end::Form-->
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::Forms Widget 15-->
+										<!--begin::List Widget 21-->
+										<div class="card card-custom gutter-b">
+											<!--begin::Header-->
+											<div class="card-header border-0 pt-5">
+												<h3 class="card-title align-items-start flex-column mb-5">
+													<span class="card-label font-weight-bolder text-dark mb-1">Parceiros Recentes</span>
+												</h3>
+											</div>
+											<!--end::Header-->
+											<!--begin::Body-->
+											<div class="card-body pt-2">
+												<!--begin::Item-->
+												<div class="d-flex mb-8">
+													<!--begin::Symbol-->
+													<div class="symbol symbol-50 symbol-2by3 flex-shrink-0 mr-4">
+														<div class="d-flex flex-column">
+															<div class="symbol-label mb-3" style="background-image: url('assets/media/stock-600x400/img-23.jpg')"></div>
+														</div>
+													</div>
+													<!--end::Symbol-->
+													<!--begin::Title-->
+													<div class="d-flex flex-column flex-grow-1 my-lg-0 my-2 pr-3">
+														<a href="https://acesse.vc/v2/3488aebd4e2" class="text-dark-75 font-weight-bolder text-hover-primary font-size-lg mb-2">Nuvem</a>
+														<span class="text-muted font-weight-bold font-size-sm mb-3">A Nuvem é uma distribuidora brasileira de jogos digitais.</span>
+													</div>
+													<!--end::Title-->
+												</div>
+												<!--end::Item-->
+													<!--begin::Item-->
+													<div class="d-flex mb-8">
+														<!--begin::Symbol-->
+														<div class="symbol symbol-50 symbol-2by3 flex-shrink-0 mr-4">
+															<div class="d-flex flex-column">
+																<div class="symbol-label mb-3" style="background-image: url('assets/media/stock-600x400/img-23.jpg')"></div>
+															</div>
+														</div>
+														<!--end::Symbol-->
+														<!--begin::Title-->
+														<div class="d-flex flex-column flex-grow-1 my-lg-0 my-2 pr-3">
+															<a href="https://acesse.vc/v2/347e04bb8bf" class="text-dark-75 font-weight-bolder text-hover-primary font-size-lg mb-2">CPM Office</a>
+															<span class="text-muted font-weight-bold font-size-sm mb-3">Especialistas em produtos para escritórios etc.</span>
+														</div>
+														<!--end::Title-->
+													</div>
+													<!--end::Item-->
+												<!--begin::Item-->
+												<div class="d-flex">
+													<!--begin::Symbol-->
+													<div class="symbol symbol-50 symbol-2by3 flex-shrink-0 mr-4">
+														<div class="d-flex flex-column">
+															<div class="symbol-label mb-3" style="background-image: url('assets/media/stock-600x400/img-25.jpg')"></div>
+														</div>
+													</div>
+													<!--end::Symbol-->
+													<!--begin::Title-->
+													<div class="d-flex flex-column flex-grow-1 my-lg-0 my-2 pr-3">
+														<a href="https://acesse.vc/v2/348c505de70" class="text-dark-75 font-weight-bolder text-hover-primary font-size-lg mb-2">Porto Faz</a>
+														<span class="text-muted font-weight-bold font-size-sm mb-3">Serviços de consertos, instalações etc.</span>
+													</div>
+													<!--end::Title-->
+												</div>
+												<!--end::Item-->
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::List Widget 21-->
+									</div>
+									<!--end::Aside-->
+									<!--begin::Layout-->
+									<div class="flex-row-fluid ml-lg-8">
+										<!--begin::Card-->
+										<div class="card card-custom card-stretch gutter-b">
+											<div class="card-body">
+												<!--begin::Engage Widget 15-->
+												<div class="card card-custom gutter-b">
+													<div class="card-body rounded p-0 d-flex">
+														<div class="d-flex flex-column flex-lg-row-auto w-auto w-lg-350px w-xl-450px w-xxl-650px py-10 py-md-14 px-10 px-md-20 pr-lg-0">
+															<h1 class="font-weight-bolder text-dark mb-0">Novas oportunidades</h1>
+															<div class="font-size-h4 mb-8">Confira nossos parceiros</div>
+															<p >Se você estiver precisando de algum serviço, antes de se aventurar pela internet, viste o site de alguns de nossos assinantes parceitos, listados abaixo. Talvez um deles seja exatamente o que procura.<p/>
+														</div>
+														<div class="d-none d-md-flex flex-row-fluid bgi-no-repeat bgi-position-y-center bgi-position-x-left bgi-size-cover" style="background-image: url({% static 'images/copy.svg' %});"></div>
+													</div>
+												</div>
+												<!--end::Engage Widget 15-->
+												<!--begin::Section-->
+												<div class="row">
+													<div class="flex-row-fluid ml-lg-8">
+														<!--begin::Engage Widget 12-->
+														<div class="card card-custom card-stretch card-stretch-half gutter-b overflow-hidden">
+															<div class="card-body p-0 d-flex rounded bg-light-success">
+																<div class="py-18 px-12">
+																	<h3 class="font-size-h1">
+																		<a href="http://digitaltrk.com/v2/337f7ddb58e" class="text-dark font-weight-bolder">Certificado Digital</a>
+																	</h3>
+																	<div class="font-size-h4 text-success">A1 Cartão e Digital</div>
+																</div>
+																<div class="d-none d-md-flex flex-row-fluid bgi-no-repeat bgi-position-y-center bgi-position-x-left bgi-size-cover" style="transform: scale(1.5) rotate(-26deg); background-image: url('assets/media/products/13.png')"></div>
+															</div>
+														</div>
+														<!--end::Engage Widget 12-->
+														
+														<!--begin::Engage Widget 12-->
+														<div class="card card-custom card-stretch card-stretch-half gutter-b overflow-hidden">
+															<div class="card-body p-0 d-flex rounded bg-light-danger">
+																<div class="py-18 px-12">
+																	<h3 class="font-size-h1">
+																		<a href="#" class="text-dark font-weight-bolder">Vale Transporte</a>
+																	</h3>
+																	<div class="font-size-h4 text-danger">Facilidade para seus funcionários</div>
+																</div>
+																<div class="d-none d-md-flex flex-row-fluid bgi-no-repeat bgi-position-y-center bgi-position-x-left bgi-size-cover" style="transform: scale(1.5) rotate(-26deg); background-image: url('assets/media/products/12.png')"></div>
+															</div>
+														</div>
+														<!--end::Engage Widget 12-->
+													</div>
+	  											</div>
+											</div>
+										</div>
+										<!--end::Card-->
+
+									</div>
+									<!--end::Layout-->
+								</div>
+								<!--end::Page Layout-->
+							</div>
+							<!--end::Container-->
+						</div>
+						<!--end::Entry-->
+					</div>
+					<!--end::Content-->
+
+						<!--begin::Entry-->
+						<div class="d-flex flex-column-fluid">
+							<!--begin::Container-->
+							<div class="container">
+								<!--begin::Row-->
+								<div class="row">
+									<div class="col-xl-4">
+										<!--begin::Card-->
+										<div class="card card-custom gutter-b card-stretch">
+											<!--begin::Body-->
+											<div class="card-body">
+												<!--begin::Info-->
+												<div class="d-flex align-items-center">
+													<!--begin::Pic-->
+													<div class="flex-shrink-0 mr-4 symbol symbol-60 symbol-circle">
+														<img src="assets/media/project-logos/3.png" alt="image" />
+													</div>
+													<!--end::Pic-->
+													<!--begin::Info-->
+													<div class="d-flex flex-column mr-auto">
+														<!--begin: Title-->
+														<div class="d-flex flex-column mr-auto">
+															<a href="https://digitaltrk.com/v2/34730ffa23c" class="text-dark text-hover-primary font-size-h4 font-weight-bolder mb-1">Vivo Empresas</a>
+														</div>
+														<!--end::Title-->
+													</div>
+													<!--end::Info-->
+												
+												</div>
+												<!--end::Info-->
+												<!--begin::Description-->
+												<div class="mb-10 mt-5 font-weight-bold">cOncessionária de telefonia fixa, telefonia móvel, internet banda larga e TV por assinatura do Brasil.</div>
+												<!--end::Description-->
+											</div>
+											<!--end::Body-->
+											<!--begin::Footer-->
+											<div class="card-footer d-flex align-items-center">
+												<div class="d-flex">
+													<div class="d-flex align-items-center mr-7">
+														<a href="#" class="btn btn-sm btn-text-dark-50 btn-hover-icon-danger btn-hover-text-danger bg-hover-light-danger font-weight-bolder rounded font-size-sm p-2">
+															<span class="svg-icon svg-icon-md svg-icon-dark-25 pr-1">
+																<!--begin::Svg Icon | path:assets/media/svg/icons/General/Heart.svg-->
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																		<polygon points="0 0 24 0 24 24 0 24" />
+																		<path d="M16.5,4.5 C14.8905,4.5 13.00825,6.32463215 12,7.5 C10.99175,6.32463215 9.1095,4.5 7.5,4.5 C4.651,4.5 3,6.72217984 3,9.55040872 C3,12.6834696 6,16 12,19.5 C18,16 21,12.75 21,9.75 C21,6.92177112 19.349,4.5 16.5,4.5 Z" fill="#000000" fill-rule="nonzero" />
+																	</g>
+																</svg>
+																<!--end::Svg Icon-->
+															</span>10 curtidas</a>
+													</div>
+												</div>
+											</div>
+											<!--end::Footer-->
+										</div>
+										<!--end:: Card-->
+									</div>
+									<div class="col-xl-4">
+										<!--begin::Card-->
+										<div class="card card-custom gutter-b card-stretch">
+											<!--begin::Body-->
+											<div class="card-body">
+												<!--begin::Info-->
+												<div class="d-flex align-items-center">
+													<!--begin::Pic-->
+													<div class="flex-shrink-0 mr-4 symbol symbol-60 symbol-circle">
+														<img src="assets/media/project-logos/3.png" alt="image" />
+													</div>
+													<!--end::Pic-->
+													<!--begin::Info-->
+													<div class="d-flex flex-column mr-auto">
+														<!--begin: Title-->
+														<div class="d-flex flex-column mr-auto">
+															<a href="https://acesse.vc/v2/348ba2960a9" class="text-dark text-hover-primary font-size-h4 font-weight-bolder mb-1">Unopar</a>
+															<span class="text-muted font-weight-bold">Creates Limitless possibilities</span>
+														</div>
+														<!--end::Title-->
+													</div>
+													<!--end::Info-->
+
+												</div>
+												<!--end::Info-->
+												<!--begin::Description-->
+												<div class="mb-10 mt-5 font-weight-bold">Vestibular Unopar Ead, desccontos em graduações.</div>
+												<!--end::Description-->
+											</div>
+											<!--end::Body-->
+											<!--begin::Footer-->
+											<div class="card-footer d-flex align-items-center">
+												<div class="d-flex">
+													<div class="d-flex align-items-center mr-7">
+														<a href="#" class="btn btn-sm btn-text-dark-50 btn-hover-icon-danger btn-hover-text-danger bg-hover-light-danger font-weight-bolder rounded font-size-sm p-2">
+															<span class="svg-icon svg-icon-md svg-icon-dark-25 pr-1">
+																<!--begin::Svg Icon | path:assets/media/svg/icons/General/Heart.svg-->
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																		<polygon points="0 0 24 0 24 24 0 24" />
+																		<path d="M16.5,4.5 C14.8905,4.5 13.00825,6.32463215 12,7.5 C10.99175,6.32463215 9.1095,4.5 7.5,4.5 C4.651,4.5 3,6.72217984 3,9.55040872 C3,12.6834696 6,16 12,19.5 C18,16 21,12.75 21,9.75 C21,6.92177112 19.349,4.5 16.5,4.5 Z" fill="#000000" fill-rule="nonzero" />
+																	</g>
+																</svg>
+																<!--end::Svg Icon-->
+															</span>75 curtidas</a>
+													</div>
+												</div>
+											</div>
+											<!--end::Footer-->
+										</div>
+										<!--end:: Card-->
+									</div>
+									<div class="col-xl-4">
+										<!--begin::Card-->
+										<div class="card card-custom gutter-b card-stretch">
+											<!--begin::Body-->
+											<div class="card-body">
+												<!--begin::Info-->
+												<div class="d-flex align-items-center">
+													<!--begin::Pic-->
+													<div class="flex-shrink-0 mr-4 symbol symbol-60 symbol-circle">
+														<img src="assets/media/project-logos/2.png" alt="image" />
+													</div>
+													<!--end::Pic-->
+													<!--begin::Info-->
+													<div class="d-flex flex-column mr-auto">
+														<!--begin: Title-->
+														<div class="d-flex flex-column mr-auto">
+															<a href="http://digitaltrk.com/v2/3483ddb0275" class="text-dark text-hover-primary font-size-h4 font-weight-bolder mb-1">LuccoFit</a>
+														</div>
+														<!--end::Title-->
+													</div>
+													<!--end::Info-->
+												</div>
+												<!--end::Info-->
+												<!--begin::Description-->
+												<div class="mb-10 mt-5 font-weight-bold">
+												Empresa de alimentos 100% naturais, que ajudam no bom funcionamento do nosso organismo, confira!
+												</div>
+												<!--end::Description-->
+											</div>
+											<!--end::Body-->
+											<!--begin::Footer-->
+											<div class="card-footer d-flex align-items-center">
+												<div class="d-flex">
+													<div class="d-flex align-items-center mr-7">
+														<a href="#" class="btn btn-sm btn-text-dark-50 btn-hover-icon-danger btn-hover-text-danger bg-hover-light-danger font-weight-bolder rounded font-size-sm p-2">
+															<span class="svg-icon svg-icon-md svg-icon-dark-25 pr-1">
+																<!--begin::Svg Icon | path:assets/media/svg/icons/General/Heart.svg-->
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																		<polygon points="0 0 24 0 24 24 0 24" />
+																		<path d="M16.5,4.5 C14.8905,4.5 13.00825,6.32463215 12,7.5 C10.99175,6.32463215 9.1095,4.5 7.5,4.5 C4.651,4.5 3,6.72217984 3,9.55040872 C3,12.6834696 6,16 12,19.5 C18,16 21,12.75 21,9.75 C21,6.92177112 19.349,4.5 16.5,4.5 Z" fill="#000000" fill-rule="nonzero" />
+																	</g>
+																</svg>
+																<!--end::Svg Icon-->
+															</span>75 curtidas</a>
+													</div>
+												</div>
+											</div>
+											<!--end::Footer-->
+										</div>
+										<!--end:: Card-->
+									</div>
+								</div>
+								<!--end::Row-->
+
+							</div>
+						</div>
+				<!--begin::Footer-->
+					<div class="footer bg-white py-4 d-flex flex-lg-column" id="kt_footer">
+						<!--begin::Container-->
+						<div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+							<!--begin::Copyright-->
+							<div class="text-dark order-2 order-md-1">
+								<span class="text-muted font-weight-bold mr-2">2020©</span>
+								<a href="https://dioramanegocios.com.br" target="_blank" class="text-dark-75 text-hover-primary">Diorama Contabilidade</a>
+							</div>
+							<!--end::Copyright-->
+							<!--begin::Nav-->
+							<div class="nav nav-dark order-1 order-md-2">
+								<a href="https://dioramanegocios.com.br" target="_blank" class="nav-link pr-3 pl-0">Sobre</a>
+								<a href="https://dioramanegocios.com.br" target="_blank" class="nav-link px-3">Team</a>
+								<a href="https://dioramanegocios.com.br/contato-suporte/" target="_blank" class="nav-link pl-3 pr-0">Contato</a>
+							</div>
+							<!--end::Nav-->
+						</div>
+						<!--end::Container-->
+					</div>
+					<!--end::Footer-->
+				</div>
+				<!--end::Wrapper-->
+			</div>
+			<!--end::Page-->
+		</div>
+		<!--end::Main-->
+				{% include 'model-sidebar.html' %}
+<!--begin::Scrolltop-->
+		<div id="kt_scrolltop" class="scrolltop">
+			<span class="svg-icon">
+				<!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Up-2.svg-->
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<polygon points="0 0 24 0 24 24 0 24" />
+						<rect fill="#000000" opacity="0.3" x="11" y="10" width="2" height="10" rx="1" />
+						<path d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z" fill="#000000" fill-rule="nonzero" />
+					</g>
+				</svg>
+				<!--end::Svg Icon-->
+			</span>
+		</div>
+<!--end::Scrolltop-->
+
+		<script>var HOST_URL = "#";</script>
+		<!--begin::Global Config(global config for global JS scripts)-->
+		<script>var KTAppSettings = { "breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1200 }, "colors": { "theme": { "base": { "white": "#ffffff", "primary": "#0BB783", "secondary": "#E5EAEE", "success": "#1BC5BD", "info": "#8950FC", "warning": "#FFA800", "danger": "#F64E60", "light": "#F3F6F9", "dark": "#212121" }, "light": { "white": "#ffffff", "primary": "#D7F9EF", "secondary": "#ECF0F3", "success": "#C9F7F5", "info": "#EEE5FF", "warning": "#FFF4DE", "danger": "#FFE2E5", "light": "#F3F6F9", "dark": "#D6D6E0" }, "inverse": { "white": "#ffffff", "primary": "#ffffff", "secondary": "#212121", "success": "#ffffff", "info": "#ffffff", "warning": "#ffffff", "danger": "#ffffff", "light": "#464E5F", "dark": "#ffffff" } }, "gray": { "gray-100": "#F3F6F9", "gray-200": "#ECF0F3", "gray-300": "#E5EAEE", "gray-400": "#D6D6E0", "gray-500": "#B5B5C3", "gray-600": "#80808F", "gray-700": "#464E5F", "gray-800": "#1B283F", "gray-900": "#212121" } }, "font-family": "Poppins" };</script>
+		<!--end::Global Config-->
+		<!--begin::Global Theme Bundle(used by all pages)-->
+		<script src="{% static 'js/plugins.bundle.js' %}"></script>
+		<script src="{% static 'js/prismjs.bundle.js' %}"></script>
+		<script src="{% static 'js/scripts.bundle.js' %}"></script>
+		<!--end::Global Theme Bundle-->
+		<!--begin::Page Scripts(used by this page)-->
+		<!--end::Page Scripts-->
+
+	</body>
+	<!--end::Body-->
+</html>
