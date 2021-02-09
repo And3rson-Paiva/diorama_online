@@ -1,0 +1,1 @@
+web: gunicorn diorama.wsgi --log-file -
